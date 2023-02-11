@@ -39,11 +39,11 @@ router.get('/:id', async (req, res) => {
         include: [
           {
             model: Tag,
-            required: true
+            required: false
           },
           {
             model: Category,
-            required: true
+            required: false
           }
         ]
       }
